@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{margin: 0;
+padding: 0;}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:none;
+}
+h1 {
+    font-family: "Beiruti", sans-serif; 
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+textarea {
+    background-color: white;
+    max-width: 50rem;
+    color:rgb(36, 34, 34);
+    padding: 1.6rem 2.4rem;
+}
+
+input[type="submit"] {
+    max-width: 16rem;
+    margin-top: 2rem;
+    color: #fff;
+    padding: 1.4rem 2.2rem;
+    border-style: solid;
+    border-width: 0.1rem;
+     font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.contact-right .container {
+    margin-top: 6rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contact-right .contact-form {
+    max-width: 50rem;
+    margin: auto;
+    padding: 50px;
+}
+.contact-right p{
+    font-family: "Beiruti", sans-serif; 
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+}
+.contact-right .contact-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input,textarea[type="submit"] {
+    cursor: pointer;
+}
+
+input:hover,textarea:hover {
+    background-color: #d3d3d3;
+}
+
+.contact-right .container .contact-form .contact-inputs .submit {
+    margin-top: 10px;
+    padding: 10px 40px;
+    background-color: rgb(9, 190, 9);
+    border-radius: 20px;
+} 
+
+.contact-right .container .contact-form .contact-inputs .submit:hover{
+    background-color: rgb(20, 122, 20);
+}
+
+.contact-right form input,
+.contact-right form textarea {
+    display: block;
+    width: auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(44, 44, 44);
+    margin: 5px 0;
+    padding: 10px 20px;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    outline: none;
+    resize: none;
+    transition: 0.5s;
+}
+
+/***********contact**********/
+
+#contact{
+    padding: 120px 50px 0 50px;
+   position: relative;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+#contact .contact-row {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+#contact .contact-row .contact-left {
+    flex-basis: 40%;
+    min-width: 40%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 4px;
+}
+
+#contact .contact-row .contact-left .icon-box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#contact .contact-row .contact-left .icon-box .icon i {
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    line-height: 47px;
+    font-size: 20px;
+    color: darkcyan;
+    transition: 0.5s;
+}
+
+#contact .contact-row .contact-left .icon-box:hover .icon i {
+    background-color: rgb(133, 64, 75);
+    color: blue;
+}
+
+#contact .contact-row .contact-left .icon-box .info h4 {
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0.8;
+    color: black;
+}
+
+#contact .contact-row .contact-left .icon-box .info h4+p {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.6;
+    color: black;
+}
+
+#contact .contact-row .contact-right {
+    flex-basis: 60%;
+    min-width: 60%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 1350px) {
+    #contact {
+        padding: 120px 15px 0 15px;
+    }
+
+    #contact .map iframe {
+        width: 250px;
+        height: 370px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #contact {
+        padding: 100px 8px 0 8px;
+    }
+
+    #contact .contact-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #contact .map iframe {
+        width: 400px;
+        height: 370px;
+    }
+    .contact-right form input,
+.contact-right form textarea {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    #contact {
+        padding: 100px 8px 0 8px;
+    }
+
+    #contact .map iframe {
+        width: 260px;
+        height: 330px;
+    }
+    .contact-right form input,
+    .contact-right form textarea {
+        display: block;
+        width: auto;
+        font-size: 10px;
+        font-weight: 500;}
+}
+
+
+/***********footer**********/
+
+footer .container {
+    padding-top: 25px 0px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+    background: none;
+}
+
+footer .textcenter {
+    font-family: "Beiruti", sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.bg-dark-1 {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    bottom: 0px !important;
+    cursor: pointer;
+}
+
+footer .container a {
+    color: white;
+    padding: 10px 10px ;
+}
+
+footer .container a:hover {
+    color: rgb(161, 161, 161);
+    opacity: 0.8;
+}
+
+
+#contact .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  #contact .top-btn {
+    font-size: 2.4rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #fff;
+    background-color: #9d9fa0; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  #contact .top-btn--icon {
+    animation: gototop 2s linear infinite alternate-reverse;
+  }
+  
+  @keyframes gototop {
+    0% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      transform: translateY(1rem);
+    }
+  }
+  
+  @media (max-width: 768px) { /* Example breakpoint, replace with your theme's mobile breakpoint */
+    #contact .top-btn {
+      font-size: 2rem;
+      width: 3rem;
+      height: 3rem;
+      bottom: 1.5rem;
+      right: 1rem;
+    }
+  }
+  

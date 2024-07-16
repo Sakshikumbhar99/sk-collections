@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navbar-list {
+  display: flex;
+  gap: 25px;
+  height: 40px;
+  width: auto;
+  font-size: 20px;
+  font-family: "Beiruti", sans-serif;
+  font-weight: 500;
+  margin-right: 100px;
+  background: none;
+}
+
+.navbar-list li {
+  margin-top: 15px;
+  list-style: none;
+  color: #fff;
+}
+
+.navbar-list li .navbar-link:link,
+.navbar-list li .navbar-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: color 0.3s linear;
+}
+
+.navbar-list li .navbar-link:hover,
+.navbar-list li .navbar-link:active {
+  color: #cfcfcf;
+  opacity: 0.6;
+}
+
+.mobile-navbar-btn {
+  display: none;
+}
+
+.mobile-navbar-btn .close-outline {
+  display: none;
+}
+
+.mobile-navbar-btn[name="close-outline"] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-navbar-btn {
+    display: inline-block;
+    z-index: 999;
+  }
+
+  .mobile-navbar-btn .mobile-nav-icon {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
+  .navbar-list {
+   
+    margin:  100px 65px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    gap: 20px;
+    font-size: 20px;
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    margin-right: 100px;
+    background-color:rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0; }
+  
+
+  .navbar-list li .navbar-link:link,
+  .navbar-list li .navbar-link:visited {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .navbar-list li .navbar-link:hover,
+  .navbar-list li .navbar-link:active {
+    color: var(--helper);
+  }
+
+  .menuIcon.active .mobile-nav-icon {
+    display: none;
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    color: #fff;
+    z-index: 9999;
+  }
+
+  .menuIcon.active .close-outline {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-right: 8px;
+  }
+
+  .menuIcon.active .navbar-list {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 999;
+  }
+}
+  
+
+
+
+
+
+
+
+
+/*
+
+@media (max-width: 768px) {
+  .mobile-navbar-btn {
+    display: inline-block;
+    z-index: 999;
+  }
+
+  .mobile-navbar-btn .mobile-nav-icon {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
+  .navbar-list {
+    margin: 100px 65px;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    gap: 20px;
+    font-size: 20px;
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-list li .navbar-link:link,
+  .navbar-list li .navbar-link:visited {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .navbar-list li .navbar-link:hover,
+  .navbar-list li .navbar-link:active {
+    color: var(--helper);
+  }
+
+  .menuIcon.active .mobile-nav-icon {
+    display: none;
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    color: #fff;
+    z-index: 9999;
+  }
+
+  .menuIcon.active .close-outline {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-right: 8px;
+  }
+
+  .menuIcon.active .navbar-list {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(50%);
+    z-index: 999;
+    width: 50%; 
+    right: 0; 
+  }
+}
+*/
