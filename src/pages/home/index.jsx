@@ -57,12 +57,24 @@ const Home = () => {
     return () => clearTimeout(timeoutId);
   }, [isPlaying, currentIndex]);
 
+  const handleShare = () => {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: "Check out this amazing photography site!",
+          url: window.location.href,
+        })
+        .catch(console.error);
+    } else {
+      alert("Share functionality is not supported on this device.");
+    }
+  };
+
   return (
     <>
       <Header />
       <div className="home" style={{ position: "fixed" }}>
         <div className="container">
-
           <div className="slider-control">
             <button className="control-btn" onClick={handlePlayPause}>
               {isPlaying ? (
@@ -99,7 +111,8 @@ const Home = () => {
             >
               <EmailOutlinedIcon style={{ fontSize: "18px" }} />
             </a>
-            <a href="#" className="social-icon">
+
+            <a href="#" className="social-icon" onClick={handleShare}>
               <SendOutlinedIcon
                 style={{ fontSize: "18px", transform: "rotate(-26deg)" }}
               />

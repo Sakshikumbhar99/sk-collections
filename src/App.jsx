@@ -5,9 +5,13 @@ import Home from "../src/pages/home/index.jsx";
 import Portfolio from "../src/pages/portfolio/index.jsx";
 import Contact from "../src/pages/contact/index.jsx";
 import About from "../src/pages/about/index.jsx";
+// import Navbar from "./components/header/navbar/index.jsx";
+// import Nav from "../src/components/header/nav/nav.jsx"
 
 function App() {
   return (
+    // <Nav/>
+    // <Navbar/>
     <BrowserRouter>
       <Routes>
         <Route exact={true} path="/" element={<Home />} />

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { CgMenu, CgCloseR } from "react-icons/cg";
-import "../nav/nav.css"; // Import the CSS file
-
+import "../nav/nav.css";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <nav className={openMenu ? "menuIcon active" : "menuIcon"}>
+    <nav
+    className={openMenu ? "menuIcon active" : "menuIcon"}
+    >
       <ul className="navbar-list">
         <li>
           <NavLink
@@ -54,8 +55,8 @@ const Navbar = () => {
             Contact
           </NavLink>
         </li>
-      </ul>
-      {/* //nav icon */}
+      </ul> 
+     {/* //nav icon */}
       <div className="mobile-navbar-btn">
         <CgMenu
           name="menu-outline"
